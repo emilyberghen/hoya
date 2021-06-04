@@ -5,6 +5,7 @@ import {
   Route,
   Switch,
   NavLink,
+  Link,
 } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -23,28 +24,43 @@ function App() {
             <h2>Emily</h2>
             <nav>
               <ul>
-                <li className="button track">
-                  <NavLink to="/track">track</NavLink>
+                <li>
+                  <Link className="button track" to="/track">
+                    track
+                  </Link>
                 </li>
                 <li>
-                  <NavLink exact activeClassName="active" to="/">
+                  <NavLink
+                    exact
+                    className="home"
+                    activeClassName="active"
+                    to="/"
+                  >
                     home
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="active" to="/calendar">
+                  <NavLink
+                    className="calendar"
+                    activeClassName="active"
+                    to="/calendar"
+                  >
                     calendar
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="active" to="/plants">
+                  <NavLink
+                    className="plants"
+                    activeClassName="active"
+                    to="/plants"
+                  >
                     plants
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
+                    className="account"
                     activeClassName="active"
-                    classname="account"
                     to="/account"
                   >
                     account

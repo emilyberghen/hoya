@@ -81,41 +81,85 @@ main {
 }
 
 .button {
-  a {
-    display: inline-block;
-    background-color: var(--color-secondary);
-    color: var(--color-light);
-    padding: var(--margin-s);
-    border-radius: var(--border-radius);
-  }
+  display: inline-flex;
+  width: 150px;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  padding: var(--margin-s);
+  border-radius: var(--border-radius);
 }
 
 nav {
   li {
-    margin: var(--margin-s) 0;
+    margin: var(--margin-m) 0;
   }
 
   a {
+    display: flex;
     color: var(--color-dark);
     text-decoration: none;
     font-weight: 600;
     font-size: var(--font-size-xl);
+    padding-left: var(--margin-s);
+  }
+
+  a::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: var(--margin-s);
+  }
+  a.home::before {
+    background-image: url(./icons/home.svg);
+  }
+  a.home.active::before {
+    background-image: url(./icons/home-active.svg);
+  }
+  a.track::before {
+    background-image: url(./icons/add.svg);
+  }
+  a.calendar::before {
+    background-image: url(./icons/calendar.svg);
+  }
+  a.calendar.active::before {
+    background-image: url(./icons/calendar-active.svg);
+  }
+  a.plants::before {
+    background-image: url(./icons/plants.svg);
+  }
+  a.plants.active::before {
+    background-image: url(./icons/plants-active.svg);
+  }
+  a.account::before {
+    background-image: url(./icons/account.svg);
+  }
+  a.account.active::before {
+    background-image: url(./icons/account-active.svg);
   }
 
   .active {
     color: var(--color-primary);
   }
+  .account {
+    position: fixed;
+    top: var(--margin-m);
+    right: var(--margin-m);
+  }
 }
 
-.plants {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: var(--margin-m);
+main {
+  .plants {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: var(--margin-m);
 
-  img {
-    width: 100%;
-    max-width: 160px;
-    border-radius: var(--border-radius);
+    img {
+      width: 160px;
+      border-radius: var(--border-radius);
+    }
   }
 }
 
