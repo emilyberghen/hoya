@@ -1,0 +1,365 @@
+[
+  {
+    "name": "Anthurium clarinervium",
+    "slug": "clarinervium",
+    "image": "images/clarinervium.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "Very low",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "No requirements",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every month (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every three years",
+        "icon": "seedling"
+      }
+    ]
+  },
+  {
+    "name": "Areca Palm",
+    "slug": "areca",
+    "image": "images/areca.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "Very low",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "No requirements",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every month (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every three years",
+        "icon": "seedling"
+      }
+    ]
+  },
+  {
+    "name": "Ficus Elastica",
+    "slug": "ficus",
+    "description": [
+      "Up to the 1970s, the rubber bush has been one of the most prominent plants in any German household. It also looks amazing as a pot plant in stairwells or office buildings. The Ficus Elastica is equipped with big, rubbery, dark-green and shiny leaves. The tropical ornamental tree is a very tough and low-maintenance plant with which you will be quite happy."
+    ],
+    "image": "images/ficus.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "Medium",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "Indirect sunlight",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every month (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every two years",
+        "icon": "seedling"
+      }
+    ]
+  },
+  {
+    "name": "Ficus Lyrata",
+    "slug": "lyrata",
+    "image": "images/lyrata.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "Very low",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "No requirements",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every month (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every three years",
+        "icon": "seedling"
+      }
+    ]
+  },
+  {
+    "name": "Eucalyptus",
+    "slug": "eucalyptus",
+    "image": "images/eucalyptus.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "Very low",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "No requirements",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every month (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every three years",
+        "icon": "seedling"
+      }
+    ]
+  },
+  {
+    "name": "Monstera Deliciosa",
+    "slug": "monstera",
+    "description": [
+      "With the Monstera deliciosa, nature presents a magnificent specimen, which is more commonly known as “Swiss Cheese Plant”. Its striking leaf structures and the white to delicate yellow flowers spread a tropical flair. It is said to be rather easy-care, even though it makes a certain degree of demands in order to thrive."
+    ],
+    "image": "images/monstera.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "Medium",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "shadow",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every two weeks (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every two years",
+        "icon": "seedling"
+      }
+    ]
+  },
+  {
+    "name": "Philodendron Brasil",
+    "slug": "brasil",
+    "image": "images/brasil.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "Very low",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "No requirements",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every month (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every three years",
+        "icon": "seedling"
+      }
+    ]
+  },
+  {
+    "name": "Philodendron Birkin",
+    "slug": "birkin",
+    "image": "images/birkin.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "Very low",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "No requirements",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every month (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every three years",
+        "icon": "seedling"
+      }
+    ]
+  },
+  {
+    "name": "Scindapsus Pictus",
+    "slug": "scindapsus",
+    "image": "images/scindapsus.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "Very low",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "No requirements",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every month (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every three years",
+        "icon": "seedling"
+      }
+    ]
+  },
+  {
+    "name": "Pilea peperomioides",
+    "slug": "pilea",
+    "image": "images/pilea.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "Very low",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "No requirements",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every month (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every three years",
+        "icon": "seedling"
+      }
+    ]
+  },
+  {
+    "name": "Epipremnum Marble Queen",
+    "slug": "marble",
+    "image": "images/marble.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "Very low",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "No requirements",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every month (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every three years",
+        "icon": "seedling"
+      }
+    ]
+  },
+  {
+    "name": "Strelitzia Reginae",
+    "slug": "strelitzia",
+    "description": [
+      "With its magnificent flowers and large green leaves the bird of paradise creates a tropical flair. Like an exotic fan, the orange-yellow and blue shining petals are stretching towards the sky. It doesn’t seem so, but the Strelitzia reginae is quite unpretentious. Good care ensures intensive growth and great blossom splendor."
+    ],
+    "image": "images/strelitzia.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "High",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "Indirect sunlight",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every two weeks (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every two years",
+        "icon": "seedling"
+      }
+    ]
+  },
+  {
+    "name": "Zamioculcas Zamiifolia",
+    "slug": "zz",
+    "description": [
+      "One of the most easy to cultivate plants is the air purifying ZZ plant (Zamioculcas zamiifolia). It impresses with decorative feathery leaves, an exotic flair and, above all, with its modest requirements regarding the watering, fertilizing and wintering. It forgives most of the care mistakes and is almost resistant to illnesses."
+    ],
+    "image": "images/zz.jpg",
+    "care": [
+      {
+        "name": "water",
+        "value": "Very low",
+        "icon": "tint"
+      },
+      {
+        "name": "light",
+        "value": "No requirements",
+        "icon": "sun"
+      },
+      {
+        "name": "fertilization",
+        "value": "Once every month (summer)",
+        "icon": "utensils"
+      },
+      {
+        "name": "repot",
+        "value": "Once every three years",
+        "icon": "seedling"
+      }
+    ]
+  }
+]
