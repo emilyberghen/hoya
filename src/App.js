@@ -1,5 +1,6 @@
 import "./App.scss";
 import "./fonts/Basteleur-Bold.woff";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -15,22 +16,35 @@ import Plants from "./pages/Plants";
 import Account from "./pages/Account";
 
 function App() {
+  const [titles, setTitles] = useState({
+    title: "Welcome back",
+    subtitle: "Emily",
+  });
   return (
     <div className="App">
       <Router>
         <header>
           <div>
-            <h1>Welcome back</h1>
-            <h2>Emily</h2>
+            <h1>{titles.title}</h1>
+            <h2>{titles.subtitle}</h2>
             <nav>
               <ul>
                 <li>
-                  <Link className="button track" to="/track">
+                  <Link
+                    onClick={() =>
+                      setTitles({ title: "Track", subtitle: "your plant care" })
+                    }
+                    className="button track"
+                    to="/track"
+                  >
                     track
                   </Link>
                 </li>
                 <li>
                   <NavLink
+                    onClick={() =>
+                      setTitles({ title: "Welcome back", subtitle: "Emily" })
+                    }
                     exact
                     className="home"
                     activeClassName="active"
@@ -41,6 +55,12 @@ function App() {
                 </li>
                 <li>
                   <NavLink
+                    onClick={() =>
+                      setTitles({
+                        title: "Calendar",
+                        subtitle: "all plants",
+                      })
+                    }
                     className="calendar"
                     activeClassName="active"
                     to="/calendar"
@@ -50,6 +70,12 @@ function App() {
                 </li>
                 <li>
                   <NavLink
+                    onClick={() =>
+                      setTitles({
+                        title: "Your urban jungle",
+                        subtitle: "all plants",
+                      })
+                    }
                     className="plants"
                     activeClassName="active"
                     to="/plants"
@@ -59,6 +85,9 @@ function App() {
                 </li>
                 <li>
                   <NavLink
+                    onClick={() =>
+                      setTitles({ title: "Account", subtitle: "your settings" })
+                    }
                     className="account"
                     activeClassName="active"
                     to="/account"
