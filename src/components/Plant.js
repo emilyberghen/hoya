@@ -1,11 +1,12 @@
 import React from "react";
 
-function Plant({ name, image, slug }) {
+function Plant({ name, image, nickname }) {
   return (
-    <section id={name.toLowerCase().replace(/ /g, "-")}>
+    <section className="plant" id={name.toLowerCase().replace(/ /g, "-")}>
       <img src={image} alt={name}></img>
       <div>
-        <h2>{name}</h2>
+        <h3>{nickname}</h3>
+        <p>{name}</p>
       </div>
     </section>
   );

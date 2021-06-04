@@ -4,7 +4,7 @@ import React from "react";
 // import data from "../data/plants.json";
 
 const HomePage = () => {
-  return <>{/* <Plants plants={data} /> */}</>;
+  return <>{}</>;
 };
 
 export default HomePage;
