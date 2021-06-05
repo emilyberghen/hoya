@@ -59,6 +59,10 @@ ul {
   padding: 0;
 }
 
+.medium {
+  font-weight: 500;
+}
+
 .App {
   margin: var(--margin-m);
   display: flex;
@@ -70,7 +74,7 @@ header {
   width: 240px;
   margin-right: calc(var(--margin-m) * 3);
 
-  div {
+  .container {
     position: fixed;
   }
 }
@@ -147,6 +151,19 @@ nav {
     position: fixed;
     top: var(--margin-m);
     right: var(--margin-m);
+  }
+}
+
+header {
+  .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--margin-s);
+
+    img {
+      width: 40px;
+      margin-right: var(--margin-s);
+    }
   }
 }
 

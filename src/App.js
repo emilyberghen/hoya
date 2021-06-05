@@ -15,6 +15,9 @@ import Track from "./pages/Track";
 import Plants from "./pages/Plants";
 import Account from "./pages/Account";
 
+import Users from "./components/Users";
+import data from "./data/users.json";
+
 function App() {
   const [titles, setTitles] = useState({
     title: "Welcome back",
@@ -24,7 +27,7 @@ function App() {
     <div className="App">
       <Router>
         <header>
-          <div>
+          <div className="container">
             <h1>{titles.title}</h1>
             <h2>{titles.subtitle}</h2>
             <nav>
@@ -99,6 +102,7 @@ function App() {
             </nav>
 
             <h2>household</h2>
+            <Users users={data} />
           </div>
         </header>
 

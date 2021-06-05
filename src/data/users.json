@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Emily",
+    "email": "emily@hoya.digital",
+    "image": "images/emily.jpg",
+    "type": "admin"
+  },
+  {
+    "name": "Branco",
+    "email": "branco@hoya.digital",
+    "image": "images/branco.jpg",
+    "type": "friend"
+  }
+]
