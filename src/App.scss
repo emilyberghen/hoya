@@ -9,6 +9,7 @@ $color-secondary: #f0bad6;
 $color-secondary-light: #fcf1f7;
 $color-dark: #000;
 $color-medium: #5a5a5a;
+$color-lighter: #c4c4c4;
 $color-light: #fff;
 
 $red: #f04d4d;
@@ -186,6 +187,73 @@ main {
   }
   section.repot {
     background-color: $orange-light;
+  }
+}
+
+.calendar {
+  abbr {
+    font-family: "Hind";
+    text-decoration-line: none;
+  }
+  button {
+    font-family: "Hind";
+    background: transparent;
+    border: none;
+  }
+
+  .react-calendar__navigation__label {
+    background: url(./icons/calendar-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 53%;
+    height: 45px;
+  }
+
+  .react-calendar__navigation__label__labelText {
+    font-size: $font-size-l;
+    font-weight: 600;
+  }
+
+  .react-calendar__tile {
+    height: 50px;
+    font-size: 16px;
+  }
+  .react-calendar__tile--now {
+    background-color: $color-secondary-light;
+    border-radius: $border-radius-l;
+    font-weight: 600;
+  }
+
+  .react-calendar__navigation,
+  .react-calendar__month-view__weekdays {
+    margin-bottom: $margin-m;
+  }
+
+  .react-calendar__navigation__next2-button,
+  .react-calendar__navigation__prev2-button {
+    display: none;
+  }
+
+  .react-calendar__month-view__weekdays__weekday {
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: $color-lighter;
+  }
+
+  .react-calendar__navigation__prev-button {
+    background: url(./icons/back.svg);
+  }
+  .react-calendar__navigation__next-button {
+    background: url(./icons/next.svg);
+  }
+  .react-calendar__navigation__arrow {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: $color-light;
   }
 }
 
