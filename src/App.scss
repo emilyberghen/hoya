@@ -347,10 +347,20 @@ main {
   p {
     color: $color-medium;
   }
+
   img {
     width: 60px;
     border-radius: $border-radius;
     margin-right: $margin-m;
+  }
+
+  &.addPlant img {
+    width: 69px;
+    height: 71px;
+    transform: translateX(-9px);
+  }
+  &.addPlant div {
+    transform: translateY(6px);
   }
 }
 

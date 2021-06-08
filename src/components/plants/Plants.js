@@ -7,7 +7,7 @@ function Plants({ plants }) {
   return (
     <>
       <div className="plants">
-        <section className="plant">
+        <section className="plant addPlant">
           <img src={image} alt="add plant"></img>
           <div>
             <h3>Got a new plant?</h3>
