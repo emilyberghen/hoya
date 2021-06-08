@@ -1,0 +1,32 @@
+[
+  {
+    "name": "water",
+    "image": "images/water.svg",
+    "color": "blue"
+  },
+  {
+    "name": "fertilize",
+    "image": "images/fertilize.svg",
+    "color": "purple"
+  },
+  {
+    "name": "repot",
+    "image": "images/repot.svg",
+    "color": "orange"
+  },
+  {
+    "name": "new leaf",
+    "image": "images/new-leaf.svg",
+    "color": "green"
+  },
+  {
+    "name": "dead leaf",
+    "image": "images/dead-leaf.svg",
+    "color": "yellow"
+  },
+  {
+    "name": "pests",
+    "image": "images/pests.svg",
+    "color": "violet"
+  }
+]

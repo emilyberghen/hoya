@@ -13,17 +13,21 @@ $color-lighter: #c4c4c4;
 $color-light: #fff;
 
 $red: #f04d4d;
-$orange: #efa44c;
+$orange: #ffb35a;
 $orange-light: #fdefde;
-$green: #5fc645;
+$yellow: #ffd670;
+$green: #7bdf58;
 $blue: #7fd2f5;
 $blue-light: #e5f6fd;
+$violet: #d786f3;
+$purple: #a778f5;
 
 $margin-xs: 5px;
 $margin-s: 10px;
 $margin-m: 20px;
 $margin-l: 40px;
 
+$font-size-xxs: 10px;
 $font-size-xs: 12px;
 $font-size-s: 14px;
 $font-size-m: 16px;
@@ -201,6 +205,10 @@ main {
     border: none;
   }
 
+  .react-calendar {
+    margin-bottom: $margin-l;
+  }
+
   .react-calendar__navigation__label {
     background: url(./icons/calendar-bg.svg);
     background-repeat: no-repeat;
@@ -254,6 +262,56 @@ main {
     background-size: contain;
     background-position: center;
     color: $color-light;
+  }
+}
+
+.track-items {
+  display: flex;
+  justify-content: space-between;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    width: 50px;
+    height: 50px;
+    border-radius: $border-radius;
+    margin-left: $margin-xs;
+  }
+  section:first-child {
+    margin-left: 0;
+  }
+
+  p {
+    margin-top: $margin-xs;
+    font-size: $font-size-xxs;
+  }
+
+  .blue {
+    color: $blue;
+    border: 2px solid $blue;
+  }
+  .purple {
+    color: $purple;
+    border: 2px solid $purple;
+  }
+  .violet {
+    color: $violet;
+    border: 2px solid $violet;
+  }
+  .orange {
+    color: $orange;
+    border: 2px solid $orange;
+  }
+  .yellow {
+    color: $yellow;
+    border: 2px solid $yellow;
+  }
+  .green {
+    color: $green;
+    border: 2px solid $green;
   }
 }
 
