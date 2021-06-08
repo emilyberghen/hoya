@@ -15,7 +15,7 @@ import Track from "./pages/Track";
 import Plants from "./pages/Plants";
 import Account from "./pages/Account";
 
-import Users from "./components/Users";
+import Users from "./components/users/Users";
 import data from "./data/users.json";
 
 function App() {
@@ -33,17 +33,6 @@ function App() {
             <nav>
               <ul>
                 <li>
-                  <Link
-                    onClick={() =>
-                      setTitles({ title: "Track", subtitle: "your plant care" })
-                    }
-                    className="button track"
-                    to="/track"
-                  >
-                    track
-                  </Link>
-                </li>
-                <li>
                   <NavLink
                     onClick={() =>
                       setTitles({ title: "Welcome back", subtitle: "Emily" })
@@ -53,7 +42,7 @@ function App() {
                     activeClassName="active"
                     to="/"
                   >
-                    home
+                    <p>home</p>
                   </NavLink>
                 </li>
                 <li>
@@ -61,29 +50,43 @@ function App() {
                     onClick={() =>
                       setTitles({
                         title: "Calendar",
-                        subtitle: "all plants",
+                        subtitle: "your care routine",
                       })
                     }
                     className="calendar"
                     activeClassName="active"
                     to="/calendar"
                   >
-                    calendar
+                    <p>calendar</p>
                   </NavLink>
+                </li>
+                <li>
+                  <Link
+                    onClick={() =>
+                      setTitles({
+                        title: "Track",
+                        subtitle: "update your plants",
+                      })
+                    }
+                    className="button track"
+                    to="/track"
+                  >
+                    <p>track</p>
+                  </Link>
                 </li>
                 <li>
                   <NavLink
                     onClick={() =>
                       setTitles({
-                        title: "Your urban jungle",
-                        subtitle: "all plants",
+                        title: "Plants",
+                        subtitle: "Your urban jungle",
                       })
                     }
                     className="plants"
                     activeClassName="active"
                     to="/plants"
                   >
-                    plants
+                    <p>plants</p>
                   </NavLink>
                 </li>
                 <li>
@@ -95,14 +98,16 @@ function App() {
                     activeClassName="active"
                     to="/account"
                   >
-                    account
+                    <p>account</p>
                   </NavLink>
                 </li>
               </ul>
             </nav>
 
-            <h2>household</h2>
-            <Users users={data} />
+            <div className="household desktop">
+              <h2>household</h2>
+              <Users users={data} />
+            </div>
           </div>
         </header>
 

@@ -1,10 +1,14 @@
 import React from "react";
 
-// import Plants from "../components/Plants";
-// import data from "../data/plants.json";
+import Predictions from "../components/predictions/Predictions";
+import predictions from "../data/predictions.json";
 
 const HomePage = () => {
-  return <>{}</>;
+  return (
+    <>
+      <Predictions predictions={predictions} />
+    </>
+  );
 };
 
 export default HomePage;

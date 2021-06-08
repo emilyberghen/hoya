@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Monster",
+    "image": "images/monstera.png",
+    "date": "April 3, 2021",
+    "type": "water"
+  },
+  {
+    "name": "Silver",
+    "image": "images/scindapsus.png",
+    "date": "April 3, 2021",
+    "type": "water"
+  },
+  {
+    "name": "Lyra",
+    "image": "images/ficus-lyrata.png",
+    "date": "April 3, 2021",
+    "type": "water"
+  },
+  {
+    "name": "Monster",
+    "image": "images/monstera.png",
+    "date": "April 6, 2021",
+    "type": "repot"
+  },
+  {
+    "name": "Lyra",
+    "image": "images/ficus-lyrata.png",
+    "date": "April 6, 2021",
+    "type": "repot"
+  }
+]

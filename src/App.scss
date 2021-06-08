@@ -4,31 +4,37 @@
   src: local("Basteleur-Bold"), url(./fonts/Basteleur-Bold.woff) format("woff");
 }
 
-html {
-  --color-primary: #019046;
-  --color-secondary: #f0bad6;
-  --color-dark: #000;
-  --color-light: #fff;
+$color-primary: #019046;
+$color-secondary: #f0bad6;
+$color-secondary-light: #fcf1f7;
+$color-dark: #000;
+$color-medium: #5a5a5a;
+$color-light: #fff;
 
-  --margin-xs: 5px;
-  --margin-s: 10px;
-  --margin-m: 20px;
+$red: #f04d4d;
+$orange: #efa44c;
+$green: #5fc645;
 
-  --font-size-s: 12px;
-  --font-size-m: 14px;
-  --font-size-l: 16px;
-  --font-size-xl: 18px;
-  --font-size-xxl: 24px;
+$margin-xs: 5px;
+$margin-s: 10px;
+$margin-m: 20px;
+$margin-l: 40px;
 
-  --border-radius: 10px;
-}
+$font-size-xs: 12px;
+$font-size-s: 14px;
+$font-size-m: 16px;
+$font-size-l: 18px;
+$font-size-xl: 25px;
+$font-size-xxl: 35px;
+
+$border-radius: 10px;
+$border-radius-l: 50px;
 
 h1 {
   font-family: "Basteleur-Bold", serif;
-  font-size: var(--font-size-xxl);
-  color: var(--color-primary);
-  margin: 0 0 var(--margin-s);
-  white-space: nowrap;
+  font-size: $font-size-xl;
+  color: $color-primary;
+  margin: 0 0 $margin-s;
 }
 
 h2,
@@ -42,12 +48,13 @@ li {
 }
 
 h2 {
-  font-size: var(--font-size-xl);
+  font-size: $font-size-l;
   font-weight: 600;
 }
 
 h3 {
-  margin-bottom: var(--margin-xs);
+  margin-bottom: $margin-xs;
+  font-weight: 500;
 }
 
 p {
@@ -59,62 +66,53 @@ ul {
   padding: 0;
 }
 
+.desktop {
+  display: none;
+}
+
 .medium {
   font-weight: 500;
 }
 
 .App {
-  margin: var(--margin-m);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-header {
-  width: 240px;
-  margin-right: calc(var(--margin-m) * 3);
-
-  .container {
-    position: fixed;
-  }
-}
-
-main {
-  margin-top: 150px;
-  width: 100%;
-}
-
-.button {
-  display: inline-flex;
-  width: 150px;
-  background-color: var(--color-secondary);
-  color: var(--color-light);
-  padding: var(--margin-s);
-  border-radius: var(--border-radius);
+  margin: $margin-m;
 }
 
 nav {
-  li {
-    margin: var(--margin-m) 0;
+  position: fixed;
+  width: calc(100% - 40px);
+  bottom: $margin-m;
+  background-color: $color-secondary-light;
+  border-radius: $border-radius-l;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: $margin-xs 0;
+    padding: 0 $margin-m;
+  }
+
+  a p {
+    display: none;
   }
 
   a {
-    display: flex;
-    color: var(--color-dark);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: var(--font-size-xl);
-    padding-left: var(--margin-s);
+    display: inline-block;
+  }
+  a.track {
+    background-color: $color-secondary;
+    padding: $margin-s;
+    border-radius: $border-radius-l;
   }
 
   a::before {
     content: "";
     display: block;
-    width: 20px;
-    height: 25px;
+    width: 22px;
+    height: 20px;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-right: var(--margin-s);
   }
   a.home::before {
     background-image: url(./icons/home.svg);
@@ -145,51 +143,168 @@ nav {
   }
 
   .active {
-    color: var(--color-primary);
-  }
-  .account {
-    position: fixed;
-    top: var(--margin-m);
-    right: var(--margin-m);
-  }
-}
-
-header {
-  .user {
-    display: flex;
-    align-items: center;
-    margin-bottom: var(--margin-s);
-
-    img {
-      width: 40px;
-      margin-right: var(--margin-s);
-    }
+    color: $color-primary;
   }
 }
 
 main {
-  .plants {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: var(--margin-m);
+  margin-top: $margin-l;
+  margin-bottom: 100px;
 
+  .plant {
+    display: flex;
+    align-items: center;
+    margin-bottom: $margin-m;
+
+    .status {
+      display: flex;
+      align-items: center;
+    }
+    h3 {
+      margin: 0;
+      line-height: 1.2;
+    }
+    .status div {
+      width: 8px;
+      height: 8px;
+      border-radius: $border-radius-l;
+      margin-left: $margin-s;
+    }
+    .status .healthy {
+      background-color: $green;
+    }
+    .status .okay {
+      background-color: $orange;
+    }
+    .status .sick {
+      background-color: $red;
+    }
+
+    p {
+      color: $color-medium;
+    }
     img {
-      width: 160px;
-      border-radius: var(--border-radius);
+      width: 60px;
+      border-radius: $border-radius;
+      margin-right: $margin-m;
     }
   }
 }
 
 @media (min-width: 768px) {
-  html {
-    --margin-xs: 10px;
-    --margin-s: 20px;
-    --margin-m: 40px;
+  h1 {
+    font-size: $font-size-xxl;
+    margin: 0 0 $margin-m;
+    white-space: nowrap;
+  }
+  h2 {
+    font-size: $font-size-xl;
+  }
+  h3 {
+    margin-bottom: $margin-s;
+  }
 
-    --font-size-s: 16px;
-    --font-size-m: 18px;
-    --font-size-l: 20px;
-    --font-size-xl: 25px;
-    --font-size-xxl: 35px;
+  .desktop {
+    display: block;
+  }
+
+  .button {
+    display: inline-flex;
+    width: 150px;
+    background-color: $color-secondary;
+    color: $color-light;
+    padding: $margin-s;
+    border-radius: $border-radius;
+  }
+
+  .App {
+    margin: $margin-l;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav {
+    position: relative;
+    width: 100%;
+    bottom: unset;
+    background-color: transparent;
+    border-radius: 0;
+
+    ul {
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+      margin: $margin-xs 0;
+      padding: 0;
+    }
+
+    li {
+      margin: $margin-m 0;
+    }
+
+    a {
+      display: flex;
+      color: $color-dark;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: $font-size-xl;
+      padding-left: $margin-s;
+    }
+
+    a p {
+      display: block;
+    }
+
+    a::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 25px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-right: $margin-m;
+    }
+    .account {
+      position: fixed;
+      top: $margin-l;
+      right: $margin-l;
+    }
+  }
+
+  header {
+    width: 240px;
+    margin-right: calc($margin-m * 3);
+
+    .container {
+      position: fixed;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      margin-bottom: $margin-s;
+
+      img {
+        width: 40px;
+        margin-right: $margin-s;
+      }
+    }
+  }
+
+  main {
+    margin-top: 150px;
+    width: 100%;
+
+    .plants {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: $margin-m;
+
+      img {
+        width: 160px;
+        border-radius: $border-radius;
+      }
+    }
   }
 }

@@ -4,83 +4,83 @@
     "slug": "clarinervium",
     "nickname": "Claire",
     "image": "images/clarinervium.png",
-    "status": 2
+    "status": "sick"
   },
   {
     "name": "Areca Palm",
     "slug": "areca",
     "nickname": "Areca",
     "image": "images/areca.png",
-    "status": 0
+    "status": "healthy"
   },
   {
     "name": "Ficus Elastica",
     "slug": "ficus",
     "nickname": "Ruby",
     "image": "images/ficus-elastica.png",
-    "status": 1
+    "status": "okay"
   },
   {
     "name": "Ficus Lyrata",
     "slug": "lyrata",
     "nickname": "Lyra",
     "image": "images/ficus-lyrata.png",
-    "status": 2
+    "status": "sick"
   },
   {
     "name": "Monstera Deliciosa",
     "slug": "monstera",
     "nickname": "Monster",
     "image": "images/monstera.png",
-    "status": 0
+    "status": "healthy"
   },
   {
     "name": "Philodendron Brasil",
     "slug": "brasil",
     "nickname": "Philly",
     "image": "images/brasil.png",
-    "status": 0
+    "status": "healthy"
   },
   {
     "name": "Philodendron Birkin",
     "slug": "birkin",
     "nickname": "Birk",
     "image": "images/birkin.png",
-    "status": 0
+    "status": "healthy"
   },
   {
     "name": "Scindapsus Pictus",
     "slug": "scindapsus",
     "nickname": "Silver",
     "image": "images/scindapsus.png",
-    "status": 0
+    "status": "healthy"
   },
   {
     "name": "Pilea peperomioides",
     "slug": "pilea",
     "nickname": "Pancake",
     "image": "images/pilea.png",
-    "status": 1
+    "status": "okay"
   },
   {
     "name": "Epipremnum Marble Queen",
     "slug": "marble",
     "nickname": "The Queen",
     "image": "images/marble.png",
-    "status": 0
+    "status": "healthy"
   },
   {
     "name": "Strelitzia Reginae",
     "slug": "strelitzia",
     "nickname": "Paradise",
     "image": "images/strelitzia.png",
-    "status": 0
+    "status": "healthy"
   },
   {
     "name": "Zamioculcas Zamiifolia",
     "slug": "zz",
     "nickname": "ZZ",
     "image": "images/zz.png",
-    "status": 0
+    "status": "healthy"
   }
 ]
