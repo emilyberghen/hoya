@@ -82,6 +82,15 @@ ul {
   font-weight: 500;
 }
 
+.btn {
+  display: inline-block;
+  padding: $margin-s $margin-m;
+  background-color: $color-secondary;
+  color: $color-light;
+  border-radius: $border-radius;
+  margin-top: $margin-m;
+}
+
 .App {
   margin: $margin-m;
 }
@@ -364,6 +373,34 @@ main {
   }
 }
 
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: $margin-s;
+
+  img {
+    width: 40px;
+    margin-right: $margin-s;
+  }
+}
+
+.account h2 {
+  margin-top: $margin-l;
+}
+
+.settings {
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $margin-s;
+  }
+
+  span {
+    color: $color-lighter;
+  }
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: $font-size-xxl;
@@ -450,17 +487,6 @@ main {
 
     .container {
       position: fixed;
-    }
-
-    .user {
-      display: flex;
-      align-items: center;
-      margin-bottom: $margin-s;
-
-      img {
-        width: 40px;
-        margin-right: $margin-s;
-      }
     }
   }
 
