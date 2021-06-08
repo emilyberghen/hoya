@@ -13,7 +13,10 @@ $color-light: #fff;
 
 $red: #f04d4d;
 $orange: #efa44c;
+$orange-light: #fdefde;
 $green: #5fc645;
+$blue: #7fd2f5;
+$blue-light: #e5f6fd;
 
 $margin-xs: 5px;
 $margin-s: 10px;
@@ -150,44 +153,78 @@ nav {
 main {
   margin-top: $margin-l;
   margin-bottom: 100px;
+}
 
-  .plant {
+.predictions {
+  section {
+    border-radius: $border-radius;
     display: flex;
-    align-items: center;
+    padding: $margin-s;
     margin-bottom: $margin-m;
 
-    .status {
-      display: flex;
-      align-items: center;
+    div {
+      margin-left: $margin-m;
     }
+
     h3 {
       margin: 0;
       line-height: 1.2;
     }
-    .status div {
-      width: 8px;
-      height: 8px;
-      border-radius: $border-radius-l;
-      margin-left: $margin-s;
-    }
-    .status .healthy {
-      background-color: $green;
-    }
-    .status .okay {
-      background-color: $orange;
-    }
-    .status .sick {
-      background-color: $red;
-    }
 
     p {
-      color: $color-medium;
+      line-height: 1.4;
     }
+
     img {
-      width: 60px;
-      border-radius: $border-radius;
-      margin-right: $margin-m;
+      width: 40px;
+      height: 40px;
     }
+  }
+
+  section.water {
+    background-color: $blue-light;
+  }
+  section.repot {
+    background-color: $orange-light;
+  }
+}
+
+.plant {
+  display: flex;
+  align-items: center;
+  margin-bottom: $margin-m;
+
+  .status {
+    display: flex;
+    align-items: center;
+  }
+  h3 {
+    margin: 0;
+    line-height: 1.2;
+  }
+  .status div {
+    width: 8px;
+    height: 8px;
+    border-radius: $border-radius-l;
+    margin-left: $margin-s;
+  }
+  .status .healthy {
+    background-color: $green;
+  }
+  .status .okay {
+    background-color: $orange;
+  }
+  .status .sick {
+    background-color: $red;
+  }
+
+  p {
+    color: $color-medium;
+  }
+  img {
+    width: 60px;
+    border-radius: $border-radius;
+    margin-right: $margin-m;
   }
 }
 

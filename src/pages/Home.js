@@ -6,7 +6,10 @@ import predictions from "../data/predictions.json";
 const HomePage = () => {
   return (
     <>
-      <Predictions predictions={predictions} />
+      <h2>Predictions</h2>
+      <div className="predictions">
+        <Predictions predictions={predictions} />
+      </div>
     </>
   );
 };
