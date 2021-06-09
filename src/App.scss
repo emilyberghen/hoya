@@ -175,6 +175,7 @@ main {
     position: relative;
     border-radius: $border-radius;
     display: flex;
+    align-items: center;
     padding: $margin-s;
     margin-bottom: $margin-m;
 
@@ -183,13 +184,11 @@ main {
     }
 
     h3 {
-      margin: 0;
-      line-height: 1.4;
+      margin: $margin-xs 0 0;
       font-size: $font-size-m;
     }
 
     p {
-      line-height: 1.4;
       font-size: $font-size-s;
     }
 
@@ -400,7 +399,11 @@ main {
     width: calc(100% - 20px);
   }
 
-  .react-select__control,
+  .react-select__control {
+    border: none;
+    background-color: $color-secondary-light;
+    border-radius: $border-radius;
+  }
   .react-datepicker__input-container input {
     border: none;
     background-color: $color-secondary-light;
@@ -427,7 +430,7 @@ main {
     display: none;
   }
   .react-select__value-container {
-    padding: 0;
+    padding: 0 $margin-s;
   }
 }
 
@@ -526,6 +529,15 @@ main {
   }
   h3 {
     margin-bottom: $margin-s;
+  }
+
+  main {
+    p,
+    span,
+    label,
+    div {
+      font-size: $font-size-l;
+    }
   }
 
   .desktop {
@@ -705,6 +717,22 @@ main {
     }
   }
 
+  .track-items {
+    flex-wrap: wrap;
+    width: 305px;
+
+    section {
+      width: 75px;
+      height: 75px;
+      margin: 0 0 $margin-l;
+    }
+
+    p {
+      margin-top: $margin-xs;
+      font-size: $font-size-s;
+    }
+  }
+
   main .plants {
     display: grid;
     grid-template-columns: repeat(2, 160px);
@@ -735,6 +763,57 @@ main {
       &.addPlant .image ~ div {
         transform: translateY(0);
       }
+    }
+  }
+
+  main .track {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      margin-top: $margin-l;
+    }
+
+    .left,
+    .right {
+      width: 360px;
+    }
+
+    .submit {
+      position: relative;
+      right: 0;
+      font-size: $font-size-l;
+      display: inline-block;
+      padding: $margin-s $margin-m;
+      background-color: $color-secondary;
+      color: $color-light;
+      border-radius: $border-radius;
+    }
+  }
+
+  .account {
+    .users {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .admin .user img {
+      width: 80px;
+    }
+
+    .admin,
+    .household,
+    .settings {
+      width: 360px;
+    }
+
+    .settings {
+      margin: $margin-l 0;
+    }
+
+    h2 {
+      margin-top: 0;
     }
   }
 }

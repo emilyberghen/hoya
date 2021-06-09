@@ -15,42 +15,46 @@ const TrackPage = () => {
 
   return (
     <form className="track">
-      <h2>date</h2>
-      <DatePicker
-        selected={startDate}
-        onChange={(date) => setStartDate(date)}
-      />
+      <div className="left">
+        <h2>date</h2>
+        <DatePicker
+          selected={startDate}
+          onChange={(date) => setStartDate(date)}
+        />
 
-      <h2>plant</h2>
-      <div className="radio-buttons">
-        <label>
-          <input type="radio" value="one" name="plants" />
-          one plant
-        </label>
-        <label>
-          <input type="radio" value="multiple" name="plants" />
-          multiple plants
-        </label>
-      </div>
-      <Select
-        options={options}
-        className="react-select"
-        classNamePrefix="react-select"
-      />
-
-      <h2>status</h2>
-      <div className="status">
-        <p className="healthy">healthy</p>
-        <p className="okay">okay</p>
-        <p className="sick">sick</p>
+        <h2>plant</h2>
+        <div className="radio-buttons">
+          <label>
+            <input type="radio" value="one" name="plants" />
+            one plant
+          </label>
+          <label>
+            <input type="radio" value="multiple" name="plants" />
+            multiple plants
+          </label>
+        </div>
+        <Select
+          options={options}
+          className="react-select"
+          classNamePrefix="react-select"
+        />
       </div>
 
-      <h2>track items</h2>
-      <div className="track-items">
-        <TrackItems items={data} />
-      </div>
+      <div className="right">
+        <h2>status</h2>
+        <div className="status">
+          <p className="healthy">healthy</p>
+          <p className="okay">okay</p>
+          <p className="sick">sick</p>
+        </div>
 
-      <div className="submit">save</div>
+        <h2>track items</h2>
+        <div className="track-items">
+          <TrackItems items={data} />
+        </div>
+
+        <div className="submit">save</div>
+      </div>
     </form>
   );
 };

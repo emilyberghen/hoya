@@ -6,25 +6,29 @@ import UserAccount from "./../components/users/UserAccount";
 const AccountPage = () => {
   return (
     <div className="account">
-      {data.map((user, key) => {
-        if (user.type === "admin") {
-          return <UserAccount key={key} {...user} />;
-        } else {
-          return false;
-        }
-      })}
+      <div className="users">
+        <div className="admin">
+          {data.map((user, key) => {
+            if (user.type === "admin") {
+              return <UserAccount key={key} {...user} />;
+            } else {
+              return false;
+            }
+          })}
 
-      <p>change password</p>
+          <p>change password</p>
+        </div>
 
-      <div className="household">
-        <h2>household</h2>
-        {data.map((user, key) => {
-          if (user.type === "friend") {
-            return <UserAccount key={key} {...user} />;
-          } else {
-            return false;
-          }
-        })}
+        <div className="household">
+          <h2>household</h2>
+          {data.map((user, key) => {
+            if (user.type === "friend") {
+              return <UserAccount key={key} {...user} />;
+            } else {
+              return false;
+            }
+          })}
+        </div>
       </div>
 
       <div className="settings">
