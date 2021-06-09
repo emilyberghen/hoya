@@ -1,6 +1,6 @@
 [
   {
-    "name": "Anthurium clarinervium",
+    "name": "Anthurium Clarinervium",
     "slug": "clarinervium",
     "nickname": "Claire",
     "image": "images/clarinervium.png",
@@ -56,7 +56,7 @@
     "status": "healthy"
   },
   {
-    "name": "Pilea peperomioides",
+    "name": "Pilea Peperomioides",
     "slug": "pilea",
     "nickname": "Pancake",
     "image": "images/pilea.png",

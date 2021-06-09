@@ -15,6 +15,8 @@ import Track from "./pages/Track";
 import Plants from "./pages/Plants";
 import Account from "./pages/Account";
 
+import Sidebar from "./pages/Sidebar";
+
 import Users from "./components/users/Users";
 import data from "./data/users.json";
 
@@ -68,7 +70,7 @@ function App() {
                         subtitle: "update your plants",
                       })
                     }
-                    className="button track"
+                    className="track"
                     to="/track"
                   >
                     <p>track</p>
@@ -130,6 +132,7 @@ function App() {
             </Route>
           </Switch>
         </main>
+        <Sidebar />
       </Router>
     </div>
   );

@@ -238,16 +238,21 @@ main {
   .react-calendar {
     margin-bottom: $margin-l;
   }
-
-  .react-calendar__navigation__label {
+  .react-calendar__navigation__label__labelText {
+    font-size: $font-size-l;
+    font-weight: 600;
+  }
+  .react-calendar__navigation__label__labelText::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 52%;
+    transform: translate(-50%, -12px);
     background: url(./icons/calendar-bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 53%;
-    height: 45px;
-  }
-
-  .react-calendar__navigation__label__labelText {
+    width: 175px;
+    height: 55px;
     font-size: $font-size-l;
     font-weight: 600;
   }
@@ -408,12 +413,19 @@ main {
     margin-right: $margin-m;
   }
 
-  &.addPlant img {
-    width: 69px;
-    height: 71px;
+  &.addPlant {
     transform: translateX(-9px);
   }
-  &.addPlant div {
+
+  &.addPlant .image {
+    background-image: url(./icons/addPlant.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 69px;
+    height: 72px;
+    margin-right: $margin-m;
+  }
+  &.addPlant .image ~ div {
     transform: translateY(6px);
   }
 }
@@ -446,7 +458,7 @@ main {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   h1 {
     font-size: $font-size-xxl;
     margin: 0 0 $margin-m;
@@ -463,13 +475,8 @@ main {
     display: block;
   }
 
-  .button {
-    display: inline-flex;
-    width: 150px;
-    background-color: $color-secondary;
-    color: $color-light;
-    padding: $margin-s;
-    border-radius: $border-radius;
+  .mobile {
+    display: none;
   }
 
   .App {
@@ -498,17 +505,42 @@ main {
       margin: $margin-m 0;
     }
 
+    li:nth-child(3) {
+      order: 1;
+    }
+    li:nth-child(1) {
+      order: 2;
+    }
+    li:nth-child(2) {
+      order: 3;
+    }
+    li:nth-child(4) {
+      order: 4;
+    }
+    li:nth-child(5) {
+      order: 5;
+      margin: 0;
+    }
+
     a {
       display: flex;
       color: $color-dark;
       text-decoration: none;
       font-weight: 600;
       font-size: $font-size-xl;
-      padding-left: $margin-s;
+      padding-left: $margin-m;
     }
 
     a p {
       display: block;
+    }
+
+    a.track {
+      display: inline-flex;
+      width: 150px;
+      color: $color-light;
+      padding: $margin-m;
+      border-radius: $border-radius;
     }
 
     a::before {
@@ -528,26 +560,144 @@ main {
   }
 
   header {
-    width: 240px;
+    width: 300px;
 
     .container {
       position: fixed;
     }
   }
 
-  main {
-    margin-top: 150px;
-    width: 100%;
+  .sidebar {
+    width: 200px;
 
-    .plants {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: $margin-m;
+    .container {
+      position: fixed;
+    }
+  }
+
+  main,
+  .sidebar {
+    margin-top: 110px;
+  }
+
+  main {
+    width: 760px;
+  }
+
+  .predictions {
+    section {
+      margin-bottom: $margin-l;
+      width: 320px;
+
+      div {
+        margin-left: $margin-m;
+      }
+
+      h3 {
+        font-size: $font-size-l;
+      }
+
+      p {
+        font-size: $font-size-m;
+      }
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+
+      &::after {
+        width: 18px;
+        height: 18px;
+        top: 60px;
+        left: 60px;
+      }
+    }
+  }
+
+  .calendar {
+    .react-calendar {
+      position: relative;
+      margin-bottom: $margin-m;
+    }
+
+    .react-calendar__navigation__label__labelText {
+      font-size: $font-size-xl;
+    }
+    .react-calendar__navigation__label__labelText::before {
+      left: calc(45% + 50px);
+      transform: translate(-50%, -55px);
+      background: url(./icons/calendar-bg-big.svg);
+      width: 518px;
+      height: 120px;
+    }
+
+    .react-calendar__tile {
+      height: 90px;
+    }
+
+    .react-calendar__navigation {
+      margin-bottom: $margin-l;
+    }
+
+    .react-calendar__navigation__prev-button {
+      transform: translateX(175px);
+    }
+    .react-calendar__navigation__next-button {
+      transform: translateX(-175px);
+    }
+  }
+
+  main .plants {
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    grid-gap: $margin-l;
+
+    .plant {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0;
 
       img {
         width: 160px;
-        border-radius: $border-radius;
+        margin-bottom: $margin-m;
       }
+
+      &.addPlant {
+        transform: translate(0, -34px);
+      }
+
+      &.addPlant .image {
+        background-image: url(./icons/addPlant.png);
+        width: 212px;
+        height: 196px;
+        margin-bottom: $margin-m;
+        transform: translateX(-36px);
+      }
+      &.addPlant .image ~ div {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  main {
+    .plants {
+      grid-template-columns: repeat(4, 160px);
+    }
+  }
+
+  .calendar {
+    .react-calendar__tile {
+      height: 110px;
+    }
+    .react-calendar__navigation__prev-button {
+      transform: translateX(250px);
+    }
+    .react-calendar__navigation__next-button {
+      transform: translateX(-250px);
     }
   }
 }

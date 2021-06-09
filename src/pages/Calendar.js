@@ -7,8 +7,8 @@ import data from "./../data/trackItems.json";
 const CalendarPage = () => {
   return (
     <div className="calendar">
-      <Calendar />
-      <TrackItems items={data} />
+      <Calendar locale="en" />
+      <TrackItems view="mobile" items={data} />
     </div>
   );
 };
