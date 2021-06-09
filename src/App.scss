@@ -171,6 +171,7 @@ main {
 
 .predictions {
   section {
+    position: relative;
     border-radius: $border-radius;
     display: flex;
     padding: $margin-s;
@@ -193,13 +194,31 @@ main {
       width: 40px;
       height: 40px;
     }
-  }
 
-  section.water {
-    background-color: $blue-light;
-  }
-  section.repot {
-    background-color: $orange-light;
+    &.water {
+      background-color: $blue-light;
+    }
+    &.repot {
+      background-color: $orange-light;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 14px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 45px;
+      left: 45px;
+    }
+    &.water::after {
+      background-image: url(./icons/water.svg);
+    }
+    &.repot::after {
+      background-image: url(./icons/repot.svg);
+    }
   }
 }
 
@@ -277,6 +296,7 @@ main {
 .track-items {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 
   section {
     display: flex;
@@ -321,6 +341,29 @@ main {
   .green {
     color: $green;
     border: 2px solid $green;
+  }
+}
+
+.track {
+  .status p {
+    display: inline-block;
+    padding: $margin-xs $margin-s;
+    border-radius: $border-radius;
+    font-weight: 600;
+    margin-right: $margin-s;
+  }
+
+  .healthy {
+    color: $green;
+    border: 2px solid $green;
+  }
+  .okay {
+    color: $orange;
+    border: 2px solid $orange;
+  }
+  .sick {
+    color: $red;
+    border: 2px solid $red;
   }
 }
 
