@@ -819,6 +819,21 @@ main {
     }
   }
 
+  .plant {
+    &.plantDetail {
+      border-bottom: 0;
+      display: block;
+
+      img {
+        width: 160px;
+      }
+
+      .status {
+        margin-top: $margin-l;
+      }
+    }
+  }
+
   main .track {
     display: flex;
     justify-content: space-between;
