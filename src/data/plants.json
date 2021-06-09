@@ -4,83 +4,119 @@
     "slug": "clarinervium",
     "nickname": "Claire",
     "image": "images/clarinervium.png",
-    "status": "sick"
+    "status": "sick",
+    "location": "living room",
+    "orientation": "east",
+    "date": "21/02/2020"
   },
   {
     "name": "Areca Palm",
     "slug": "areca",
     "nickname": "Areca",
     "image": "images/areca.png",
-    "status": "healthy"
+    "status": "healthy",
+    "location": "bathroom",
+    "orientation": "west",
+    "date": "01/12/2020"
   },
   {
     "name": "Ficus Elastica",
     "slug": "ficus",
     "nickname": "Ruby",
     "image": "images/ficus-elastica.png",
-    "status": "okay"
+    "status": "okay",
+    "location": "living room",
+    "orientation": "east",
+    "date": "12/04/2021"
   },
   {
     "name": "Ficus Lyrata",
     "slug": "lyrata",
     "nickname": "Lyra",
     "image": "images/ficus-lyrata.png",
-    "status": "sick"
+    "status": "sick",
+    "location": "kitchen",
+    "orientation": "north",
+    "date": "06/02/2021"
   },
   {
     "name": "Monstera Deliciosa",
     "slug": "monstera",
     "nickname": "Monster",
     "image": "images/monstera.png",
-    "status": "healthy"
+    "status": "healthy",
+    "location": "living room",
+    "orientation": "east",
+    "date": "27/05/2020"
   },
   {
     "name": "Philodendron Brasil",
     "slug": "brasil",
     "nickname": "Philly",
     "image": "images/brasil.png",
-    "status": "healthy"
+    "status": "healthy",
+    "location": "bathroom",
+    "orientation": "west",
+    "date": "01/08/2020"
   },
   {
     "name": "Philodendron Birkin",
     "slug": "birkin",
     "nickname": "Birk",
     "image": "images/birkin.png",
-    "status": "healthy"
+    "status": "healthy",
+    "location": "living room",
+    "orientation": "east",
+    "date": "15/05/2021"
   },
   {
     "name": "Scindapsus Pictus",
     "slug": "scindapsus",
     "nickname": "Silver",
     "image": "images/scindapsus.png",
-    "status": "healthy"
+    "status": "healthy",
+    "location": "bedroom",
+    "orientation": "east",
+    "date": "22/04/2020"
   },
   {
     "name": "Pilea Peperomioides",
     "slug": "pilea",
     "nickname": "Pancake",
     "image": "images/pilea.png",
-    "status": "okay"
+    "status": "okay",
+    "location": "living room",
+    "orientation": "east",
+    "date": "03/02/2021"
   },
   {
     "name": "Epipremnum Marble Queen",
     "slug": "marble",
     "nickname": "The Queen",
     "image": "images/marble.png",
-    "status": "healthy"
+    "status": "healthy",
+    "location": "living room",
+    "orientation": "east",
+    "date": "14/10/2020"
   },
   {
     "name": "Strelitzia Reginae",
     "slug": "strelitzia",
     "nickname": "Paradise",
     "image": "images/strelitzia.png",
-    "status": "healthy"
+    "status": "healthy",
+    "location": "bedroom",
+    "orientation": "north",
+    "date": "08/07/2020"
   },
   {
     "name": "Zamioculcas Zamiifolia",
     "slug": "zz",
     "nickname": "ZZ",
     "image": "images/zz.png",
-    "status": "healthy"
+    "status": "healthy",
+    "location": "living room",
+    "orientation": "south",
+    "date": "14/09/2020"
   }
 ]

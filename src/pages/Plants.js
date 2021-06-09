@@ -3,7 +3,7 @@ import React from "react";
 import Plants from "../components/plants/Plants";
 import data from "../data/plants.json";
 
-function PlantPage() {
+function PlantsPage() {
   return (
     <>
       <h2>12 plants</h2>
@@ -12,4 +12,4 @@ function PlantPage() {
   );
 }
 
-export default PlantPage;
+export default PlantsPage;

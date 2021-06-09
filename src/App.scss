@@ -66,6 +66,11 @@ h3 {
   font-weight: 500;
 }
 
+a {
+  color: $color-dark;
+  text-decoration: none;
+}
+
 p {
   margin: 0;
 }
@@ -81,6 +86,13 @@ ul {
 
 .medium {
   font-weight: 500;
+}
+
+.link {
+  display: inline-block;
+  color: $color-primary;
+  font-weight: 600;
+  margin-bottom: $margin-m;
 }
 
 .btn {
@@ -472,6 +484,18 @@ main {
     width: 60px;
     border-radius: $border-radius;
     margin-right: $margin-m;
+  }
+
+  &.plantDetail {
+    padding-bottom: $margin-l;
+    border-bottom: 2px solid $color-secondary-light;
+  }
+
+  &.plantDetail img {
+    width: 100px;
+  }
+  &.plantDetail .info {
+    margin-top: $margin-m;
   }
 
   &.addPlant {

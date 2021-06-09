@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import Calendar from "./pages/Calendar";
 import Track from "./pages/Track";
 import Plants from "./pages/Plants";
+import Plant from "./pages/Plant";
 import Account from "./pages/Account";
 
 import Sidebar from "./pages/Sidebar";
@@ -130,6 +131,7 @@ function App() {
             <Route exact path="/account">
               <Account />
             </Route>
+            <Route exact path="/plant/:plant" component={Plant} />
           </Switch>
         </main>
         <Sidebar />
