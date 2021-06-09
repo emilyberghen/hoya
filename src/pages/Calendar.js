@@ -6,7 +6,7 @@ import data from "./../data/trackItems.json";
 
 const CalendarPage = () => {
   return (
-    <div className="calendar">
+    <div className="calendar calendar-big">
       <Calendar locale="en" />
       <TrackItems view="mobile" items={data} />
     </div>

@@ -239,6 +239,7 @@ main {
     margin-bottom: $margin-l;
   }
   .react-calendar__navigation__label__labelText {
+    position: relative;
     font-size: $font-size-l;
     font-weight: 600;
   }
@@ -629,15 +630,7 @@ main {
   }
 
   header {
-    width: 300px;
-
-    .container {
-      position: fixed;
-    }
-  }
-
-  .sidebar {
-    width: 200px;
+    width: 280px;
 
     .container {
       position: fixed;
@@ -650,7 +643,16 @@ main {
   }
 
   main {
-    width: 760px;
+    width: 720px;
+  }
+
+  main .home {
+    display: flex;
+    justify-content: space-between;
+
+    .calendar {
+      width: 320px;
+    }
   }
 
   .predictions {
@@ -684,7 +686,34 @@ main {
     }
   }
 
-  .calendar {
+  .calendar-small {
+    .react-calendar {
+      position: relative;
+      margin-top: 50px;
+    }
+    .react-calendar::before {
+      display: block;
+      content: "";
+      width: 575px;
+      height: 500px;
+      background-image: url(./icons/calendar-bg-small.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: -100px;
+      left: -40px;
+      z-index: -10;
+    }
+
+    .react-calendar__navigation__label__labelText::before {
+      position: static;
+      background: transparent;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .calendar-big {
     .react-calendar {
       position: relative;
       margin-bottom: $margin-m;
@@ -710,10 +739,10 @@ main {
     }
 
     .react-calendar__navigation__prev-button {
-      transform: translateX(175px);
+      transform: translateX(200px);
     }
     .react-calendar__navigation__next-button {
-      transform: translateX(-175px);
+      transform: translateX(-200px);
     }
   }
 
@@ -776,7 +805,7 @@ main {
 
     .left,
     .right {
-      width: 360px;
+      width: 350px;
     }
 
     .submit {
@@ -805,7 +834,7 @@ main {
     .admin,
     .household,
     .settings {
-      width: 360px;
+      width: 350px;
     }
 
     .settings {
@@ -820,20 +849,40 @@ main {
 
 @media (min-width: 1500px) {
   main {
+    width: 900px;
     .plants {
       grid-template-columns: repeat(4, 160px);
     }
   }
 
-  .calendar {
+  header {
+    width: 300px;
+  }
+
+  .sidebar {
+    width: 200px;
+
+    .container {
+      position: fixed;
+    }
+  }
+
+  main .home {
+    .calendar,
+    .predictions section {
+      width: 360px;
+    }
+  }
+
+  .calendar-big {
     .react-calendar__tile {
       height: 110px;
     }
     .react-calendar__navigation__prev-button {
-      transform: translateX(250px);
+      transform: translateX(320px);
     }
     .react-calendar__navigation__next-button {
-      transform: translateX(-250px);
+      transform: translateX(-320px);
     }
   }
 }
