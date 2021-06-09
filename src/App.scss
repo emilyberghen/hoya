@@ -1,4 +1,5 @@
 @import-normalize;
+@import "~react-datepicker/dist/react-datepicker.css";
 @font-face {
   font-family: "Basteleur-Bold";
   src: local("Basteleur-Bold"), url(./fonts/Basteleur-Bold.woff) format("woff");
@@ -391,39 +392,37 @@ main {
     color: $color-primary;
   }
 
-  .react-date-picker {
-    width: 100%;
-  }
-
   .react-select {
     margin-top: $margin-m;
   }
 
-  .react-date-picker__wrapper,
-  .react-select__control {
+  .react-datepicker-wrapper {
+    width: calc(100% - 20px);
+  }
+
+  .react-select__control,
+  .react-datepicker__input-container input {
     border: none;
     background-color: $color-secondary-light;
     border-radius: $border-radius;
     padding: $margin-s;
   }
 
-  .react-date-picker__calendar-button {
+  .react-datepicker__input-container input {
     background-image: url(./icons/calendar.svg);
-    background-size: contain;
+    background-size: 5%;
+    background-position: 95%;
     background-repeat: no-repeat;
-    width: 20px;
-  }
-  .react-date-picker__calendar-button svg {
-    display: none;
+    width: 100%;
   }
 
-  .react-select__value-container {
+  .react-select__value-container,
+  .react-datepicker__input-container {
     font-family: "Hind", sans-serif;
     font-size: $font-size-m;
     color: $color-dark;
   }
 
-  .react-date-picker__clear-button,
   .react-select__indicator-separator {
     display: none;
   }

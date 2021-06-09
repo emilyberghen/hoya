@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Select from "react-select";
-import DatePicker from "react-date-picker";
+import DatePicker from "react-datepicker";
 
 import data from "./../data/trackItems.json";
 import TrackItems from "./../components/track-items/TrackItems";
 
 const TrackPage = () => {
-  const [value, onChange] = useState(new Date());
+  const [startDate, setStartDate] = useState(new Date());
   const options = [
     { value: "all plants", label: "all plants" },
     { value: "living room plants", label: "living room plants" },
@@ -16,7 +16,10 @@ const TrackPage = () => {
   return (
     <form className="track">
       <h2>date</h2>
-      <DatePicker onChange={onChange} value={value} />
+      <DatePicker
+        selected={startDate}
+        onChange={(date) => setStartDate(date)}
+      />
 
       <h2>plant</h2>
       <div className="radio-buttons">
