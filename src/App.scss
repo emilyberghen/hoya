@@ -372,6 +372,64 @@ main {
     color: $red;
     border: 2px solid $red;
   }
+
+  label {
+    font-size: $font-size-m;
+    font-weight: 600;
+    margin-right: $margin-m;
+  }
+  .radio-buttons input {
+    margin-right: $margin-s;
+  }
+
+  .submit {
+    position: absolute;
+    top: 65px;
+    right: $margin-m;
+    font-size: $font-size-m;
+    font-weight: 600;
+    color: $color-primary;
+  }
+
+  .react-date-picker {
+    width: 100%;
+  }
+
+  .react-select {
+    margin-top: $margin-m;
+  }
+
+  .react-date-picker__wrapper,
+  .react-select__control {
+    border: none;
+    background-color: $color-secondary-light;
+    border-radius: $border-radius;
+    padding: $margin-s;
+  }
+
+  .react-date-picker__calendar-button {
+    background-image: url(./icons/calendar.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+  }
+  .react-date-picker__calendar-button svg {
+    display: none;
+  }
+
+  .react-select__value-container {
+    font-family: "Hind", sans-serif;
+    font-size: $font-size-m;
+    color: $color-dark;
+  }
+
+  .react-date-picker__clear-button,
+  .react-select__indicator-separator {
+    display: none;
+  }
+  .react-select__value-container {
+    padding: 0;
+  }
 }
 
 .plant {
