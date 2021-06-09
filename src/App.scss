@@ -183,11 +183,13 @@ main {
 
     h3 {
       margin: 0;
-      line-height: 1.2;
+      line-height: 1.4;
+      font-size: $font-size-m;
     }
 
     p {
       line-height: 1.4;
+      font-size: $font-size-s;
     }
 
     img {
